@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+    id="WebApp_ID" version="2.5">
+
+    <display-name>Fenix</display-name>
+    
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/error.jsp</location>
+    </error-page>
+
+    <welcome-file-list>
+      <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>cadastroCliente</servlet-name>
+    <servlet-class>
+        servlets.cadastroCliente
+    </servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>cadastroCliente</servlet-name>
+    <url-pattern>/cadastroCliente</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>cadastroFornecedor</servlet-name>
+    <servlet-class>
+        servlets.cadastroFornecedor
+    </servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>cadastroFornecedor</servlet-name>
+    <url-pattern>/cadastroFornecedor</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>cadastroCategoria</servlet-name>
+    <servlet-class>
+        servlets.cadastroCategoria
+    </servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>cadastroCategoria</servlet-name>
+    <url-pattern>/cadastroCategoria</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>cadastroProduto</servlet-name>
+    <servlet-class>
+        servlets.cadastroProduto
+    </servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>cadastroProduto</servlet-name>
+    <url-pattern>/cadastroProduto</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>deleteCliente</servlet-name>
+    <servlet-class>
+        servlets.deleteCliente
+    </servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>deleteCliente</servlet-name>
+    <url-pattern>/deleteCliente</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>deleteProduto</servlet-name>
+    <servlet-class>
+        servlets.deleteProduto
+    </servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>deleteProduto</servlet-name>
+    <url-pattern>/deleteProduto</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>deleteCategoria</servlet-name>
+    <servlet-class>
+        servlets.deleteCategoria
+    </servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>deleteCategoria</servlet-name>
+    <url-pattern>/deleteCategoria</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>deleteFornecedor</servlet-name>
+    <servlet-class>
+        servlets.deleteFornecedor
+    </servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>deleteFornecedor</servlet-name>
+    <url-pattern>/deleteFornecedor</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>cadastroUsuario</servlet-name>
+    <servlet-class>
+        servlets.cadastroUsuario
+    </servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>cadastroUsuario</servlet-name>
+	<url-pattern>/cadastroUsuario</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>editarCategoria</servlet-name>
+    <servlet-class>
+        servlets.editarCategoria
+    </servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>editarCategoria</servlet-name>
+    <url-pattern>/editarCategoria</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>editarProduto</servlet-name>
+    <servlet-class>
+        servlets.editarProduto
+    </servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>editarProduto</servlet-name>
+    <url-pattern>/editarProduto</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>editarFornecedor</servlet-name>
+    <servlet-class>
+        servlets.editarFornecedor
+    </servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>editarFornecedor</servlet-name>
+    <url-pattern>/editarFornecedor</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>editarCliente</servlet-name>
+    <servlet-class>
+        servlets.editarCliente
+    </servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>editarCliente</servlet-name>
+    <url-pattern>/editarCliente</url-pattern>
+</servlet-mapping>
+</web-app>
+
